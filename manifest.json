@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Chat Scroll Helper",
+  "version": "0.1.0",
+  "description": "Use Shift+↑ to scroll to the correct place in DeepSeek web chat.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.deepseek.com/*",
+        "http://localhost/*",
+        "file://*/*"
+      ],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+

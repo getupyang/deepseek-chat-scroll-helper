@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+*.log
+dist
+
+# 本地测试页面默认都忽略
+test_pages/*
+
+# 如果你想保留一个示例，就以后手动放一个
+!test_pages/sample-deepseek.htm
+!test_pages/README.md
